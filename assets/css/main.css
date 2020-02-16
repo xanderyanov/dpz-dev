@@ -6,9 +6,17 @@ body {
   font-weight: 400;
 }
 
+body {
+  background-image: url(../img/bg1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top center;
+}
+
 .site__header {
 }
 .site__center {
+  height: 1000px;
 }
 .site__footer {
 }
