@@ -1,0 +1,38 @@
+html,
+body {
+  color: #000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.site__header {
+}
+.site__center {
+}
+.site__footer {
+}
+
+.header__area {
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.topLine__area {
+  width: 100%;
+}
+
+.topLine {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
