@@ -1,35 +1,108 @@
-@media only screen and (max-width : 1200px) {
-
+@media only screen and (max-width: 1280px) {
 }
 
-@media only screen and (max-width : 1080px) {
-
+@media only screen and (max-width: 1140px) {
+  .header__infoBlockItem {
+    margin-right: 20px;
+  }
+  .header__infoBlockItem i {
+    margin-right: 5px;
+  }
 }
 
-@media only screen and (max-width : 920px) {
-
+@media only screen and (max-width: 1200px) {
 }
 
-@media only screen and (max-width : 800px) {
+@media only screen and (max-width: 1080px) {
+  .header__infoBlockItem {
+    width: 33.333%;
+    margin: 0;
+  }
 
+  .header__infoBlockItem1 {
+    order: 1;
+  }
+  .header__infoBlockItem2 {
+    order: 2;
+    justify-content: center;
+  }
+  .header__infoBlockItem3 {
+    order: 4;
+    width: 100%;
+    justify-content: center;
+  }
+  .header__infoBlockItem4 {
+    order: 3;
+    justify-content: flex-end;
+  }
 }
 
-@media only screen and (max-width : 768px) {
-
+@media only screen and (max-width: 920px) {
+  header.header {
+    padding: 10px;
+  }
 }
 
-@media only screen and (max-width : 600px) {
-
+@media only screen and (max-width: 800px) {
 }
 
-@media only screen and (max-width : 480px) {
-
+@media only screen and (max-width: 768px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+  header.header {
+    padding: 5px;
+  }
+  .header__right {
+    width: 78%;
+  }
 }
 
-@media only screen and (max-width : 400px) {
+@media only screen and (max-width: 600px) {
+  .header__infoBlockItem {
+    width: 50%;
+  }
+  .header__infoBlockItem1 {
+    order: 1;
+  }
+  .header__infoBlockItem2 {
+    order: 4;
 
+    justify-content: flex-end;
+  }
+  .header__infoBlockItem3 {
+    order: 3;
+    width: 50%;
+    justify-content: flex-start;
+  }
+  .header__infoBlockItem4 {
+    order: 2;
+    justify-content: flex-end;
+  }
 }
 
-@media only screen and (max-width : 320px) {
+@media only screen and (max-width: 480px) {
+  header.header {
+    flex-direction: column;
+  }
+  .logo1 {
+    width: 30%;
+    margin-bottom: 5px;
+  }
+  .header__right {
+    width: 100%;
+  }
+}
 
+@media only screen and (max-width: 400px) {
+  .logo1 {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .logo1 {
+    width: 70%;
+  }
 }
