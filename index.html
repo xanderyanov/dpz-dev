@@ -51,6 +51,17 @@
   </head>
 
   <body>
+    <nav class="adaptiveMenu__area">
+      <div class="adaptiveMenuBtnClose"><i class="icon-close"></i></div>
+      <ul class="adaptiveMenu">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Каталог товаров</a></li>
+        <li><a href="#">Заказ и доставка</a></li>
+        <li><a href="#">Информация</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+
     <div class="site__header">
       <header class="header">
         <div class="logo1">
@@ -87,6 +98,58 @@
               </div>
             </div>
           </div>
+          <div class="header__actionLine">
+            <!-- <div class="header__actionLineTop"> -->
+            <div class="menuButton">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <nav class="topMenu__area">
+              <ul class="topMenu">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Каталог товаров</a></li>
+                <li><a href="#">Заказ и доставка</a></li>
+                <li><a href="#">Информация</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="ringBtn ringBtn_js"><span>Заказать звонок</span></div>
+            <div class="ringBtn_i ringBtn_js"><i class="icon-call"></i></div>
+            <!-- </div> -->
+            <!-- <div class="header__actionLineBottom"> -->
+            <form action="#" method="get" class="msearch2 actionLineSearch__area" id="mse2_form">
+              <button type="submit" class="actionLineSearch__btn">
+                <i class="icon-search"></i>
+              </button>
+              <input
+                type="text"
+                class="actionLineSearch__input"
+                name=""
+                value=""
+                placeholder="Поиск по названию товара"
+              />
+            </form>
+
+            <div id="msMiniCart" class="myMiniCart__area">
+              <!-- <div class="empty">
+                  <a href="[[~21]]">
+                    <span>Товаров:</span>
+                    <span>0</span>
+                    <i class="icon-cart"></i>
+                  </a>
+                </div> -->
+              <div class="not_empty">
+                <a href="#">
+                  <i class="icon-cart"></i>
+                  <span class="myMiniCart__object">товаров:</span>
+                  <span class="myMiniCart__total ms2_total_count">5</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- </div> -->
         </div>
       </header>
     </div>

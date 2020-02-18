@@ -1,4 +1,10 @@
 @media only screen and (max-width: 1280px) {
+  .topMenu li {
+    margin-right: 0.625rem;
+  }
+  .ringBtn span {
+    font-size: 0.875rem;
+  }
 }
 
 @media only screen and (max-width: 1140px) {
@@ -7,6 +13,13 @@
   }
   .header__infoBlockItem i {
     margin-right: 5px;
+  }
+  .topMenu li a {
+    text-decoration: none;
+    font-size: 1rem;
+  }
+
+  .menuButton {
   }
 }
 
@@ -35,6 +48,43 @@
     order: 3;
     justify-content: flex-end;
   }
+
+  .menuButton {
+    display: block;
+    /* margin: 0; */
+    margin: 0 10px 0 0;
+    order: 1;
+  }
+
+  .topMenu__area {
+    display: none;
+  }
+
+  .ringBtn {
+    display: none;
+  }
+
+  .ringBtn_i {
+    display: block;
+    margin: 0;
+    order: 4;
+  }
+
+  .header__actionLine {
+    flex-wrap: nowrap;
+  }
+
+  .actionLineSearch__area {
+    margin: 0 10px 0 0;
+    /* margin: 0; */
+    width: auto;
+    flex-grow: 1;
+    order: 2;
+  }
+  .myMiniCart__area {
+    margin: 0 10px 0 0;
+    order: 3;
+  }
 }
 
 @media only screen and (max-width: 920px) {
@@ -56,6 +106,22 @@
   }
   .header__right {
     width: 78%;
+  }
+  .myMiniCart__object {
+    display: none;
+  }
+
+  .header__actionLine {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    margin: 0;
+    z-index: 2000;
+  }
+  .site__header {
+    padding-top: 42px;
   }
 }
 

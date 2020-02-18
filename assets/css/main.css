@@ -31,6 +31,7 @@ header.header {
   background-color: rgba(255, 255, 255, 0.8);
   justify-content: space-between;
   align-items: center;
+  border-bottom: 2px solid #be3f46;
 }
 
 .logo1 {
@@ -45,13 +46,14 @@ header.header {
 .header__right {
   display: flex;
   flex-direction: column;
-  width: 75%;
+  width: 76%;
 }
 
 .header__infoBlock {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .header__infoBlockItem {
@@ -73,7 +75,7 @@ header.header {
 .header__infoBlockItemInner a {
   color: black;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.125rem;
   text-decoration: none;
   transition: all 0.3s;
@@ -85,7 +87,7 @@ header.header {
 .header__infoBlockItemInner span {
   color: black;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.125rem;
 }
 
@@ -100,4 +102,329 @@ header.header {
 
 .header__infoBlockItemInner span.red {
   color: #be3f46;
+}
+
+.header__actionLine {
+  width: 100%;
+  display: flex;
+  /* flex-direction: column; */
+  margin-top: 10px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header__actionLineTop {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menuButton {
+  background: #be3f46;
+  border-radius: 2px;
+  width: 32px;
+  height: 32px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  display: none;
+  z-index: 200;
+  margin-right: 20px;
+}
+
+.menuButton span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 20px;
+  background: #fff;
+  opacity: 1;
+  left: 6px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+.menuButton span:nth-child(1) {
+  top: 6px;
+}
+
+.menuButton span:nth-child(2) {
+  top: 15px;
+}
+
+.menuButton span:nth-child(3) {
+  top: 24px;
+}
+
+/* .menuButton.open {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+} */
+
+.menuButton.open span:nth-child(1) {
+  top: 15px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.menuButton.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+.menuButton.open span:nth-child(3) {
+  top: 15px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.topMenu__area {
+  position: relative;
+}
+
+.topMenu {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.topMenu li {
+  list-style: none;
+  margin-right: 1.25rem;
+}
+
+.topMenu li:last-child {
+  margin-right: 0;
+}
+
+.topMenu li a {
+  text-decoration: none;
+  font-size: 1.125rem;
+  line-height: 1;
+  white-space: nowrap;
+  color: #000;
+  transition: all 0.3s;
+  font-weight: 600;
+}
+
+.topMenu li.active a,
+.topMenu li:hover a {
+  color: #be3f46;
+}
+
+.adaptiveMenuBtnClose {
+  position: absolute;
+  z-index: 20;
+  top: 20px;
+  right: 20px;
+}
+
+.adaptiveMenuBtnClose i {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.adaptiveMenu__area {
+  position: fixed;
+  display: none;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(190, 63, 70, 1);
+  z-index: 2001;
+}
+
+.adaptiveMenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.adaptiveMenu li {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.adaptiveMenu li:last-child {
+  margin-bottom: 0;
+}
+
+.adaptiveMenu li a {
+  text-decoration: none;
+  font-size: 1.375rem;
+  line-height: 1;
+  white-space: nowrap;
+  color: #fff;
+  transition: all 0.3s;
+  font-weight: 600;
+}
+
+.adaptiveMenu li.active a,
+.adaptiveMenu li:hover a {
+  text-decoration: underline;
+}
+
+.ringBtn {
+  background-color: #be3f46;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  font-size: 1rem;
+  line-height: 1;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+  border: 2px solid #be3f46;
+  border-radius: 2px;
+}
+
+.ringBtn span {
+  font-size: 1rem;
+  line-height: 1;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  position: relative;
+  z-index: 2;
+  white-space: nowrap;
+}
+
+.ringBtn:before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 100%;
+  background: #fff;
+  top: 0;
+  left: auto;
+  right: 0;
+  z-index: 1;
+  transition: all 300ms ease;
+}
+
+.ringBtn:hover span {
+  color: #be3f46;
+}
+
+.ringBtn:hover:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.ringBtn_i {
+  display: none;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.ringBtn_i i {
+  color: #be3f46;
+  font-size: 2rem;
+}
+
+.header__actionLineBottom {
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.actionLineSearch__area {
+  display: flex;
+  width: 75%;
+  align-items: center;
+  background-color: #e8e8e8;
+  border-radius: 2px;
+  padding: 5px 5px;
+  flex-wrap: nowrap;
+  margin-top: 10px;
+}
+
+.actionLineSearch__btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.actionLineSearch__btn i {
+  font-size: 1rem;
+}
+
+.actionLineSearch__input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 0.875rem;
+  /* padding: 0 0 0 36px; */
+}
+
+.myMiniCart__area {
+  position: relative;
+  margin-top: 10px;
+}
+
+.myMiniCart__area a {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  text-decoration: none;
+}
+
+.myMiniCart__area i {
+  font-size: 1.125rem;
+  color: #000;
+  margin-right: 10px;
+}
+
+.myMiniCart__object {
+  font-size: 1rem;
+  color: #000;
+  margin-right: 5px;
+  font-weight: 600;
+}
+
+.myMiniCart__total {
+  font-size: 1.125rem;
+  color: #000;
+  font-weight: 700;
 }
