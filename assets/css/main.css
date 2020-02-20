@@ -4,6 +4,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
+  line-height: 1.1rem;
 }
 
 body {
@@ -290,16 +291,12 @@ header.header {
   text-decoration: underline;
 }
 
-.ringBtn {
+.redBtn_withSpan {
   background-color: #be3f46;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8px 16px;
-  font-size: 1rem;
-  line-height: 1;
   color: #fff;
-  text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s;
   position: relative;
@@ -307,19 +304,17 @@ header.header {
   border-radius: 2px;
 }
 
-.ringBtn span {
+.redBtn_withSpan span {
   font-size: 1rem;
   line-height: 1;
   color: #fff;
-  font-weight: 600;
-  text-transform: uppercase;
   transition: all 0.3s;
   position: relative;
   z-index: 2;
   white-space: nowrap;
 }
 
-.ringBtn:before {
+.redBtn_withSpan:before {
   position: absolute;
   content: "";
   width: 0%;
@@ -332,11 +327,11 @@ header.header {
   transition: all 300ms ease;
 }
 
-.ringBtn:hover span {
+.redBtn_withSpan:hover span {
   color: #be3f46;
 }
 
-.ringBtn:hover:before {
+.redBtn_withSpan:hover:before {
   position: absolute;
   content: "";
   width: 100%;
@@ -346,6 +341,17 @@ header.header {
   left: 0;
   right: 0;
   z-index: 1;
+}
+
+.ringBtn {
+  padding: 8px 16px;
+  font-size: 1rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.ringBtn span {
+  font-weight: 600;
 }
 
 .ringBtn_i {
@@ -427,4 +433,122 @@ header.header {
   font-size: 1.125rem;
   color: #000;
   font-weight: 700;
+}
+
+.siteWrapper {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 15px;
+}
+
+.siteWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.aSide {
+  width: 22%;
+}
+
+.bSide {
+  width: 76%;
+}
+
+.priceBtn__inSide {
+  background: #be3f46;
+  color: white;
+  font-family: "Open Sans";
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 5px;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.vMenu__area {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.vMenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.vMenu li {
+  list-style: none;
+  position: relative;
+  margin-bottom: 2px;
+}
+
+.vMenu li.vLev1 {
+}
+
+.vMenu li a {
+  background: #dcdcdc;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+  font-size: 1rem;
+  padding: 10px 30px 10px 10px;
+  border-bottom: 2px solid #a6a6a6;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.goInner {
+  position: absolute;
+  right: 0;
+  transform: translate(-50%, 0);
+}
+
+.goInner i {
+  font-size: 0.75rem;
+  color: #000;
+  transition: all 0.3s;
+}
+
+.vMenu li:hover > a {
+  background: #be3f46;
+  color: #fff;
+}
+.vMenu li:hover > a > .goInner i {
+  color: #fff;
+}
+
+.vMenu li > ul {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  min-width: 90%;
+  display: none;
+}
+
+.vMenu li:hover > ul {
+  display: block;
+}
+
+.vMenu li ul li a {
+  border-left: 2px solid #a6a6a6;
+  font-size: 0.875rem;
+}
+
+.vMenu li ul li.vLev2 a {
+  font-size: 0.875rem;
+}
+
+.rekBox {
+  display: flex;
+  text-decoration: none;
+}
+
+.rekBox img {
+  display: block;
+  width: 100%;
 }
