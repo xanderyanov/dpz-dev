@@ -107,22 +107,31 @@ if ($(".map__area").length) {
     myGeoObjects[0] = new ymaps.Placemark(
       [51.47580915016555, 46.15893440825965],
       {
-        clusterCaption: "Доставка стройматериалов по звонку",
-        hintContent: "Магазин стройматериалов в Энгельсе!",
-        balloonContentBody: "г. Энгельс, ул. Марины Расковой 6В"
+        // Зададим содержимое заголовка балуна.
+        balloonContentHeader:
+          '<div class="baloon__top">Магазин стройматериалов<br>в Энгельсе</div>' +
+          '<div class="baloon__description">Доставка по звонку!</div>',
+        // Зададим содержимое основной части балуна.
+        balloonContentBody:
+          '<div class="baloon__content"><img src="assets/img/logo-map.png" height="52" width="150">' +
+          '<a href="tel:+79053879990">8(905)387-99-90</a> <a href="tel:+79376397000">8(937)639-70-00</a>',
+        // Зададим содержимое нижней части балуна.
+        balloonContentFooter: '<div class="baloon__footer">город Энгельс, ул. М.Расковой, д.6В</div>',
+        clusterCaption: "Доставка стройматериалов",
+        // Зададим содержимое всплывающей подсказки.
+        hintContent: '<div class="baloon__top">Магазин стройматериалов в Энгельсе</div>'
       },
       {
         // Необходимо указать данный тип макета.
         iconLayout: "default#image",
         iconImageHref: "assets/img/marker.png",
         // Размеры метки.
-        iconImageSize: [30, 48],
+        iconImageSize: [31, 50],
         // Смещение левого верхнего угла иконки относительно
         // её «ножки» (точки привязки).
-        iconImageOffset: [-15, -48]
+        iconImageOffset: [-15, -50]
       }
     );
-
     // myGeoObjects[1] = new ymaps.Placemark([51.551021850477284,46.01745698280331],{
     //     clusterCaption: 'Саратовремеонт',
     //     hintContent: 'Саратовремонт!',

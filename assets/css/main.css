@@ -14,11 +14,13 @@ body {
 }
 
 .site__header {
+  position: relative;
 }
 .site__center {
-  height: 1000px;
+  position: relative;
 }
 .site__footer {
+  position: relative;
 }
 
 header.header {
@@ -739,4 +741,70 @@ header.header {
 
 #map {
   height: 400px;
+}
+
+.baloon__top {
+  font-size: 1.25rem;
+  color: #be3f46;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+.baloon__description {
+  font-size: 0.75rem;
+  color: #000;
+  text-align: center;
+}
+
+.baloon__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.baloon__content a {
+  font-size: 1rem;
+  color: #be3f46;
+  font-family: "Open Sans", sans-serif;
+}
+
+.baloon__footer {
+  font-size: 0.75rem;
+  color: #000;
+  font-weight: 300;
+}
+
+.footer__area {
+  position: relative;
+}
+
+.footer {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  border-top: 2px solid #be3f46;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.f1 {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.f1__text {
+  color: #000;
+  font-size: 0.875rem;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.f1__text_red {
+  color: #be3f46;
+  margin-bottom: 10px;
 }
