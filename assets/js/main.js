@@ -92,7 +92,7 @@ if ($(".map__area").length) {
 
   function init() {
     var myMap = new ymaps.Map("map", {
-      center: [51.53686035750409, 46.02260713621521],
+      center: [51.47580915016555, 46.15893440825965],
       zoom: 16,
       controls: ["zoomControl"]
     });
@@ -105,11 +105,11 @@ if ($(".map__area").length) {
     var myGeoObjects = [];
 
     myGeoObjects[0] = new ymaps.Placemark(
-      [51.53686035750409, 46.02260713621521],
+      [51.47580915016555, 46.15893440825965],
       {
-        clusterCaption: "Интернет-магазин",
-        hintContent: "ИНтернет-магазин в Энгельсе!",
-        balloonContentBody: "г. Энгельс, ул. Тельмана 1"
+        clusterCaption: "Доставка стройматериалов по звонку",
+        hintContent: "Магазин стройматериалов в Энгельсе!",
+        balloonContentBody: "г. Энгельс, ул. Марины Расковой 6В"
       },
       {
         // Необходимо указать данный тип макета.

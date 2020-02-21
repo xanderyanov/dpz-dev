@@ -4,39 +4,41 @@ h3,
 h4,
 h5,
 h6 {
-  color: #376b4d;
-  font-family: 'Open Sans', sans-serif;
+  color: #be3f46;
+  font-family: "Open Sans", sans-serif;
   margin: 0 0 10px 0;
-  font-weight: 600;
+  font-weight: 400;
+  line-height: 1.2;
 }
 
 h1 {
-  font-size: 36px;
-  text-transform: uppercase;
+  font-size: 2rem;
 }
 
 h2 {
-  font-size: 32px;
-  text-transform: uppercase;
+  font-size: 1.75rem;
+  margin: 10px 0 10px 0;
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 1.5rem;
+  margin: 10px 0 10px 0;
 }
 
 h4 {
-  font-size: 26px;
+  font-size: 1.375rem;
+  margin: 10px 0 10px 0;
 }
 
 h5 {
-  font-size: 24px;
+  font-size: 1.25rem;
 }
 
 h6 {
-  font-size: 22px;
+  font-size: 1.125rem;
 }
 
-.content{
+.content {
   margin-bottom: 20px;
 }
 
@@ -45,10 +47,10 @@ h6 {
 .content ol,
 .content blockquote,
 .content table {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 1.2;
   margin: 0 0 10px 0;
   color: #212121;
 }
@@ -63,7 +65,7 @@ h6 {
 
 .content ul,
 .content ol {
-  padding: 0 0 0 25px;
+  padding: 0 0 15px 25px;
 }
 
 .content ul li,
@@ -78,13 +80,12 @@ h6 {
 
 .content blockquote {
   color: #fff;
-  border-left: 5px solid #1a996a;
   padding: 10px 20px;
-  background: #1ac294;
+  background: #be3f46;
 }
 
 .content a {
-  color: #1a996a;
+  color: #be3f46;
   text-decoration: underline;
 }
 
@@ -106,15 +107,15 @@ h6 {
 }
 
 .content ol li:before {
-  content: counter(li) '.';
+  content: counter(li) ".";
   counter-increment: li;
   position: absolute;
   left: 0px;
   width: 25px;
   text-align: right;
   display: inline-block;
-  color: #1a996a;
-  font-family: 'Open Sans', sans-serif;
+  color: #be3f46;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -144,7 +145,7 @@ h6 {
 .content table th,
 .content table td {
   padding: 10px;
-  border: 1px solid #987d5c;
+  border: 1px solid #be3f46;
 }
 
 table.clear {
@@ -162,6 +163,6 @@ table.clear td {
   max-width: 100%;
   overflow: auto;
 }
-.table_outer table{
+.table_outer table {
   min-width: 500px;
 }
