@@ -13,6 +13,31 @@ $(function() {
     .addClass("hasInner")
     .append('<div class="goInner"><i class="icon-next"></i></div>');
 
+  $(".vMenu__toggleBtn").click(function() {
+    $(this).toggleClass("open");
+    $(".adaptivevMenu__area").slideToggle();
+  });
+
+  $(".adaptivevMenuBtnClose").click(function() {
+    $(".vMenu__toggleBtn").toggleClass("open");
+    $(".adaptivevMenu__area").slideToggle();
+  });
+
+  $("table").wrap('<div class="table_outer"></div>');
+
+  $(".toTop").hide();
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 0) {
+      $(".toTop").fadeIn();
+    } else {
+      $(".toTop").fadeOut();
+    }
+  });
+  $(".toTop").click(function() {
+    $("body,html").animate({ scrollTop: 0 }, 400);
+    return false;
+  });
+
   if ($(".swiper-container1").length) {
     var mySwiper1 = new Swiper(".swiper-container1", {
       slidesPerView: 1,
