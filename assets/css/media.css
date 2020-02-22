@@ -91,6 +91,21 @@
   header.header {
     padding: 10px;
   }
+  .siteWrapper {
+    padding: 10px;
+  }
+  .footer {
+    padding: 10px;
+  }
+  .siteMap {
+    padding: 10px;
+  }
+  .swiper-slide1 {
+    height: 300px;
+  }
+  .swiper-pagination1 {
+    bottom: 5px !important;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -115,13 +130,33 @@
     position: fixed;
     left: 0;
     top: 0;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 1);
     padding: 5px;
     margin: 0;
     z-index: 2000;
+    border-bottom: 1px solid #be3f46;
   }
   .site__header {
     padding-top: 42px;
+  }
+  .siteWrapper {
+    padding: 5px;
+  }
+  .footer {
+    padding: 5px;
+  }
+  .siteMap {
+    padding: 5px;
+  }
+  .infoContacts {
+    width: 100%;
+  }
+
+  .infoMap {
+    width: 100%;
+  }
+  .vMenu__toggleBtn {
+    display: flex;
   }
 }
 
@@ -145,6 +180,9 @@
   .header__infoBlockItem4 {
     order: 2;
     justify-content: flex-end;
+  }
+  #map {
+    height: 300px;
   }
 }
 
