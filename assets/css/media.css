@@ -158,6 +158,13 @@
   .vMenu__toggleBtn {
     display: flex;
   }
+  .aSide {
+    display: none;
+  }
+
+  .bSide {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 600px) {

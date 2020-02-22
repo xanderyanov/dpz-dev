@@ -486,6 +486,8 @@ header.header {
   border: 1px solid #fff;
   border-left: none;
   display: none;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 .vMenu__toggleBtn span {
   color: white;
@@ -567,6 +569,21 @@ header.header {
 
 .vMenu li ul li.vLev2 a {
   font-size: 0.875rem;
+}
+
+.adaptivevMenu__area {
+  position: fixed;
+  /* display: none; */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(190, 63, 70, 1);
+  z-index: 2001;
+  padding: 20%;
+}
+
+.avMenu {
 }
 
 .rekBox {
