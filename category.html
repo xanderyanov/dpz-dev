@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+
+<!--[if IEMobile 7]>
+<html class="iem7" lang="ru"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!-->
+<html lang="ru">
+  <!--<![endif]-->
+
+  <head>
+    <title>текстовая [[*seotitle]]</title>
+    <meta name="keywords" content="[[*seokeywords]]" />
+    <meta name="description" content="[[*seodescription]]" />
+
+    <!--[[*noindex:isequalto=`yes`:then=`<meta name="robots" content="noindex" />`]]-->
+
+    <!--<base href="[[!++site_url]]" />-->
+    <!--<meta charset="[[++modx_charset]]" />-->
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="imagetoolbar" content="no" />
+    <meta name="msthemecompatible" content="no" />
+
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="apple-touch-icon-precomposed" href="assets/img/apple/h/apple-touch-icon.png" />
+    <link rel="apple-touch-icon-precomposed" href="assets/img/apple/m/apple-touch-icon.png" />
+    <link rel="apple-touch-icon-precomposed" href="assets/img/apple/l/apple-touch-icon-precomposed.png" />
+    <link rel="shortcut icon" href="assets/img/apple/l/apple-touch-icon.png" />
+
+    <link rel="shortcut icon" href="assets/img/favicon.ico" />
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <meta property="og:url" content="[[*template:in=`1`:then=`[[~[[*id]]]]`:else=`[[++site_url]][[~[[*id]]]]`]]" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="[[!*seotitle:isnot=``:then=`[[*seotitle]]`:else=`[[*pagetitle]]`]]" />
+    <meta property="og:description" content="[[*seodescription]]" />
+    <meta property="og:image" content="[[++assets_url]]img/og-img.jpg" />
+
+    <link rel="stylesheet" href="assets/css/apps.css" />
+  </head>
+
+  <body>
+    <nav class="adaptiveMenu__area">
+      <div class="adaptiveMenuBtnClose"><i class="icon-close"></i></div>
+      <ul class="adaptiveMenu">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Каталог товаров</a></li>
+        <li><a href="#">Заказ и доставка</a></li>
+        <li><a href="#">Информация</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+
+    <nav class="adaptivevMenu__area">
+      <div class="adaptivevMenuBtnClose"><i class="icon-close"></i></div>
+      <ul class="avMenu">
+        <li class="avLev1"><a href="#">Доска обрезная</a></li>
+        <li class="avLev1">
+          <a href="#">Инструменты Инструменты Инструменты Инструменты</a>
+          <ul>
+            <li class="avLev2"><a href="#">Инструмент малярный</a></li>
+            <li class="avLev2"><a href="#">Инструмент слесарный</a></li>
+            <li class="avLev2"><a href="#">Садовый инструмент</a></li>
+            <li class="avLev2">
+              <a href="#">Электроинструмент</a>
+              <ul>
+                <li class="avLev3"><a href="#">Дрели, шуроповерты</a></li>
+                <li class="avLev3"><a href="#">Болгарки, УШМ</a></li>
+                <li class="avLev3"><a href="#">Бензопилы</a></li>
+                <li class="avLev3"><a href="#">Перфораторы</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="avLev1"><a href="#">Водосточные системы</a></li>
+        <li class="avLev1"><a href="#">Кирпич, блоки</a></li>
+        <li class="avLev1"><a href="#">Крепёж</a></li>
+        <li class="avLev1"><a href="#">Кровельный материал</a></li>
+        <li class="avLev1"><a href="#">Лакокрасочные материалы</a></li>
+        <li class="avLev1"><a href="#">Лестницы, стремянки</a></li>
+        <li class="avLev1"><a href="#">Метизы</a></li>
+        <li class="avLev1"><a href="#">Линолеум</a></li>
+        <li class="avLev1"><a href="#">Отделочные материалы</a></li>
+        <li class="avLev1"><a href="#">ПВХ панели</a></li>
+        <li class="avLev1"><a href="#">Пленки полиэтиленовые</a></li>
+        <li class="avLev1"><a href="#">Поролон</a></li>
+        <li class="avLev1"><a href="#">Доска обрезная</a></li>
+        <li class="avLev1">
+          <a href="#">Инструменты Инструменты Инструменты Инструменты</a>
+          <ul>
+            <li class="avLev2"><a href="#">Инструмент малярный</a></li>
+            <li class="avLev2"><a href="#">Инструмент слесарный</a></li>
+            <li class="avLev2"><a href="#">Садовый инструмент</a></li>
+            <li class="avLev2">
+              <a href="#">Электроинструмент</a>
+              <ul>
+                <li class="avLev3"><a href="#">Дрели, шуроповерты</a></li>
+                <li class="avLev3"><a href="#">Болгарки, УШМ</a></li>
+                <li class="avLev3"><a href="#">Бензопилы</a></li>
+                <li class="avLev3"><a href="#">Перфораторы</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="avLev1"><a href="#">Водосточные системы</a></li>
+        <li class="avLev1"><a href="#">Кирпич, блоки</a></li>
+        <li class="avLev1"><a href="#">Крепёж</a></li>
+        <li class="avLev1"><a href="#">Кровельный материал</a></li>
+        <li class="avLev1"><a href="#">Лакокрасочные материалы</a></li>
+        <li class="avLev1"><a href="#">Лестницы, стремянки</a></li>
+        <li class="avLev1"><a href="#">Метизы</a></li>
+        <li class="avLev1"><a href="#">Линолеум</a></li>
+        <li class="avLev1"><a href="#">Отделочные материалы</a></li>
+        <li class="avLev1"><a href="#">ПВХ панели</a></li>
+        <li class="avLev1"><a href="#">Пленки полиэтиленовые</a></li>
+        <li class="avLev1"><a href="#">Поролон</a></li>
+        <li class="avLev1"><a href="#">Доска обрезная</a></li>
+        <li class="avLev1">
+          <a href="#">Инструменты Инструменты Инструменты Инструменты</a>
+          <ul>
+            <li class="avLev2"><a href="#">Инструмент малярный</a></li>
+            <li class="avLev2"><a href="#">Инструмент слесарный</a></li>
+            <li class="avLev2"><a href="#">Садовый инструмент</a></li>
+            <li class="avLev2">
+              <a href="#">Электроинструмент</a>
+              <ul>
+                <li class="avLev3"><a href="#">Дрели, шуроповерты</a></li>
+                <li class="avLev3"><a href="#">Болгарки, УШМ</a></li>
+                <li class="avLev3"><a href="#">Бензопилы</a></li>
+                <li class="avLev3"><a href="#">Перфораторы</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="avLev1"><a href="#">Водосточные системы</a></li>
+        <li class="avLev1"><a href="#">Кирпич, блоки</a></li>
+        <li class="avLev1"><a href="#">Крепёж</a></li>
+        <li class="avLev1"><a href="#">Кровельный материал</a></li>
+        <li class="avLev1"><a href="#">Лакокрасочные материалы</a></li>
+        <li class="avLev1"><a href="#">Лестницы, стремянки</a></li>
+        <li class="avLev1"><a href="#">Метизы</a></li>
+        <li class="avLev1"><a href="#">Линолеум</a></li>
+        <li class="avLev1"><a href="#">Отделочные материалы</a></li>
+        <li class="avLev1"><a href="#">ПВХ панели</a></li>
+        <li class="avLev1"><a href="#">Пленки полиэтиленовые</a></li>
+        <li class="avLev1"><a href="#">Поролон</a></li>
+      </ul>
+    </nav>
+
+    <div class="site__header">
+      <header class="header">
+        <div class="logo1">
+          <a href="#">
+            <img src="assets/img/logo1.png" alt="Доставка по звонку" />
+          </a>
+        </div>
+        <div class="header__right">
+          <div class="header__infoBlock">
+            <div class="header__infoBlockItem header__infoBlockItem1">
+              <i class="icon-call"></i>
+              <div class="header__infoBlockItemInner">
+                <a href="tel:+79053879990">8(905)387-99-90</a>
+                <a href="tel:+79376397000">8(937)639-70-00</a>
+              </div>
+            </div>
+            <div class="header__infoBlockItem header__infoBlockItem2">
+              <i class="icon-at"></i>
+              <div class="header__infoBlockItemInner">
+                <a href="mailto:mail@dpz64.ru">mail@dpz64.ru</a>
+              </div>
+            </div>
+            <div class="header__infoBlockItem header__infoBlockItem3">
+              <i class="icon-placeholder"></i>
+              <div class="header__infoBlockItemInner">
+                <span>г. Энгельс, ул. М.Расковой 6в</span>
+              </div>
+            </div>
+            <div class="header__infoBlockItem header__infoBlockItem4">
+              <i class="icon-clock"></i>
+              <div class="header__infoBlockItemInner">
+                <span>Пн.-Пт.: 9:00 - 20:00</span>
+                <span class="red">Сб.- Вс.: 9:00 - 18:00</span>
+              </div>
+            </div>
+          </div>
+          <div class="header__actionLine">
+            <!-- <div class="header__actionLineTop"> -->
+            <div class="menuButton">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <nav class="topMenu__area">
+              <ul class="topMenu">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Каталог товаров</a></li>
+                <li><a href="#">Заказ и доставка</a></li>
+                <li><a href="#">Информация</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="ringBtn redBtn_withSpan ringBtn_js"><span>Заказать звонок</span></div>
+            <div class="ringBtn_i ringBtn_js"><i class="icon-call"></i></div>
+            <!-- </div> -->
+            <!-- <div class="header__actionLineBottom"> -->
+            <form action="#" method="get" class="msearch2 actionLineSearch__area" id="mse2_form">
+              <button type="submit" class="actionLineSearch__btn">
+                <i class="icon-search"></i>
+              </button>
+              <input
+                type="text"
+                class="actionLineSearch__input"
+                name=""
+                value=""
+                placeholder="Поиск по названию товара"
+              />
+            </form>
+
+            <div id="msMiniCart" class="myMiniCart__area">
+              <!-- <div class="empty">
+                  <a href="[[~21]]">
+                    <span>Товаров:</span>
+                    <span>0</span>
+                    <i class="icon-cart"></i>
+                  </a>
+                </div> -->
+              <div class="not_empty">
+                <a href="#">
+                  <i class="icon-cart"></i>
+                  <span class="myMiniCart__object">товаров:</span>
+                  <span class="myMiniCart__total ms2_total_count">5</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- </div> -->
+        </div>
+      </header>
+    </div>
+
+    <div class="site__center">
+      <div class="siteWrapper">
+        <div class="vMenu__toggleBtn">
+          <span>К</span>
+          <span>а</span>
+          <span>т</span>
+          <span>а</span>
+          <span>л</span>
+          <span>о</span>
+          <span>г</span>
+        </div>
+        <div class="aSide">
+          <a href="#" class="priceBtn__inSide redBtn_withSpan"><span>Скачать прайс</span></a>
+
+          <nav class="vMenu__area">
+            <ul class="vMenu">
+              <li class="vLev1"><a href="#">Доска обрезная</a></li>
+              <li class="vLev1">
+                <a href="#">Инструменты Инструменты Инструменты Инструменты</a>
+                <ul>
+                  <li class="vLev2"><a href="#">Инструмент малярный</a></li>
+                  <li class="vLev2"><a href="#">Инструмент слесарный</a></li>
+                  <li class="vLev2"><a href="#">Садовый инструмент</a></li>
+                  <li class="vLev2">
+                    <a href="#">Электроинструмент</a>
+                    <ul>
+                      <li class="vLev3"><a href="#">Дрели, шуроповерты</a></li>
+                      <li class="vLev3"><a href="#">Болгарки, УШМ</a></li>
+                      <li class="vLev3"><a href="#">Бензопилы</a></li>
+                      <li class="vLev3"><a href="#">Перфораторы</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="vLev1"><a href="#">Водосточные системы</a></li>
+              <li class="vLev1"><a href="#">Кирпич, блоки</a></li>
+              <li class="vLev1"><a href="#">Крепёж</a></li>
+              <li class="vLev1"><a href="#">Кровельный материал</a></li>
+              <li class="vLev1"><a href="#">Лакокрасочные материалы</a></li>
+              <li class="vLev1"><a href="#">Лестницы, стремянки</a></li>
+              <li class="vLev1"><a href="#">Метизы</a></li>
+              <li class="vLev1"><a href="#">Линолеум</a></li>
+              <li class="vLev1"><a href="#">Отделочные материалы</a></li>
+              <li class="vLev1"><a href="#">ПВХ панели</a></li>
+              <li class="vLev1"><a href="#">Пленки полиэтиленовые</a></li>
+              <li class="vLev1"><a href="#">Поролон</a></li>
+            </ul>
+          </nav>
+          <a href="#" class="rekBox">
+            <img src="assets/img/reklama.png" alt="1" />
+          </a>
+        </div>
+        <div class="bSide">
+          <div class="breadcrumbs__area">
+            <div class="breadcrumbs">
+              <div><a href="#">Главная&nbsp;</a></div>
+              /
+              <div><a href="#">Категория&nbsp;</a></div>
+              /
+              <div><span>Текущий пункт</span></div>
+            </div>
+          </div>
+          <div class="content">
+            <h1>Заголовок 1</h1>
+          </div>
+          <div class="category__outer">
+            <div class="category">
+              <div class="tovarItem__outer">
+                <form method="post" class="ms2_form">
+                  <input type="hidden" name="id" value="{$id}" />
+                  <input type="hidden" name="count" value="1" />
+                  <input type="hidden" name="options" value="[]" />
+                  <div class="tovarItem">
+                    <a href="#" class="tovarItem__header">
+                      <div class="tovarItem__img">
+                        <img src="assets/img/cat/01.jpg" alt="1" />
+                      </div>
+                      <div class="tovarItem__title">Название товара 1</div>
+                      <div class="tovarItem__desc">
+                        Короткое описание товара в одну, две или несколько строчек. Самое основное. Ну и еще немного
+                        если надо
+                      </div>
+                    </a>
+                    <div class="tovarItem__footer">
+                      <div class="tovarItem__priceOuter">
+                        <div class="tovarItem__oldPrice">
+                          Старая цена: 2500 руб.
+                        </div>
+                        <div class="tovarItem__price">
+                          Цена: 2200 руб.
+                        </div>
+                      </div>
+                      <div class="number">
+                        <button class="minus">-</button>
+                        <input type="text" name="count" value="1" class="cartCountInput" />
+                        <button class="plus">+</button>
+                      </div>
+                      <a
+                        href="#"
+                        class="tovarItem__addCart redBtn_withSpan"
+                        type="submit"
+                        name="ms2_action"
+                        value="cart/add"
+                        ><span>Купить</span>
+                      </a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="tovarItem__outer">
+                <form method="post" class="ms2_form">
+                  <input type="hidden" name="id" value="{$id}" />
+                  <input type="hidden" name="count" value="1" />
+                  <input type="hidden" name="options" value="[]" />
+                  <div class="tovarItem">
+                    <a href="#" class="tovarItem__header">
+                      <div class="tovarItem__img">
+                        <img src="assets/img/cat/02.jpg" alt="1" />
+                      </div>
+                      <div class="tovarItem__title">Название товара 1</div>
+                      <div class="tovarItem__desc">
+                        Короткое описание товара в одну
+                      </div>
+                    </a>
+                    <div class="tovarItem__footer">
+                      <div class="tovarItem__priceOuter">
+                        <div class="tovarItem__oldPrice">
+                          Старая цена: 2500 руб.
+                        </div>
+                        <div class="tovarItem__price">
+                          Цена: 2200 руб.
+                        </div>
+                      </div>
+                      <div class="number">
+                        <button class="minus">-</button>
+                        <input type="text" name="count" value="1" class="cartCountInput" />
+                        <button class="plus">+</button>
+                      </div>
+                      <a
+                        href="#"
+                        class="tovarItem__addCart redBtn_withSpan"
+                        type="submit"
+                        name="ms2_action"
+                        value="cart/add"
+                        ><span>Купить</span>
+                      </a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="tovarItem__outer">
+                <form method="post" class="ms2_form">
+                  <input type="hidden" name="id" value="{$id}" />
+                  <input type="hidden" name="count" value="1" />
+                  <input type="hidden" name="options" value="[]" />
+                  <div class="tovarItem">
+                    <a href="#" class="tovarItem__header">
+                      <div class="tovarItem__img">
+                        <img src="assets/img/cat/01.jpg" alt="1" />
+                      </div>
+                      <div class="tovarItem__title">Название товара 1</div>
+                      <div class="tovarItem__desc">
+                        Короткое описание товара в одну, две или несколько строчек. Самое основное. Ну и еще немного
+                        если надо
+                      </div>
+                    </a>
+                    <div class="tovarItem__footer">
+                      <div class="tovarItem__priceOuter">
+                        <div class="tovarItem__oldPrice">
+                          Старая цена: 2500 руб.
+                        </div>
+                        <div class="tovarItem__price">
+                          Цена: 2200 руб.
+                        </div>
+                      </div>
+                      <div class="number">
+                        <button class="minus">-</button>
+                        <input type="text" name="count" value="1" class="cartCountInput" />
+                        <button class="plus">+</button>
+                      </div>
+                      <a
+                        href="#"
+                        class="tovarItem__addCart redBtn_withSpan"
+                        type="submit"
+                        name="ms2_action"
+                        value="cart/add"
+                        ><span>Купить</span>
+                      </a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="tovarItem__outer">
+                <form method="post" class="ms2_form">
+                  <input type="hidden" name="id" value="{$id}" />
+                  <input type="hidden" name="count" value="1" />
+                  <input type="hidden" name="options" value="[]" />
+                  <div class="tovarItem">
+                    <a href="#" class="tovarItem__header">
+                      <div class="tovarItem__img">
+                        <img src="assets/img/cat/03.jpg" alt="1" />
+                      </div>
+                      <div class="tovarItem__title">Название товара 1</div>
+                      <div class="tovarItem__desc">
+                        Короткое описание товара в одну, две или несколько строчек. Самое основное. Ну и еще немного
+                        если надо
+                      </div>
+                    </a>
+                    <div class="tovarItem__footer">
+                      <div class="tovarItem__priceOuter">
+                        <div class="tovarItem__oldPrice">
+                          Старая цена: 2500 руб.
+                        </div>
+                        <div class="tovarItem__price">
+                          Цена: 2200 руб.
+                        </div>
+                      </div>
+                      <div class="number">
+                        <button class="minus">-</button>
+                        <input type="text" name="count" value="1" class="cartCountInput" />
+                        <button class="plus">+</button>
+                      </div>
+                      <a
+                        href="#"
+                        class="tovarItem__addCart redBtn_withSpan"
+                        type="submit"
+                        name="ms2_action"
+                        value="cart/add"
+                        ><span>Купить</span>
+                      </a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="tovarItem__outer">
+                <form method="post" class="ms2_form">
+                  <input type="hidden" name="id" value="{$id}" />
+                  <input type="hidden" name="count" value="1" />
+                  <input type="hidden" name="options" value="[]" />
+                  <div class="tovarItem">
+                    <a href="#" class="tovarItem__header">
+                      <div class="tovarItem__img">
+                        <img src="assets/img/cat/01.jpg" alt="1" />
+                      </div>
+                      <div class="tovarItem__title">Название товара 1</div>
+                      <div class="tovarItem__desc">
+                        Короткое описание товара в одну, две или несколько строчек. Самое основное. Ну и еще немного
+                        если надо
+                      </div>
+                    </a>
+                    <div class="tovarItem__footer">
+                      <div class="tovarItem__priceOuter">
+                        <!-- <div class="tovarItem__oldPrice">
+                          Старая цена: 2500 руб.
+                        </div> -->
+                        <div class="tovarItem__price">
+                          Цена: 2200 руб.
+                        </div>
+                      </div>
+                      <div class="number">
+                        <button class="minus">-</button>
+                        <input type="text" name="count" value="1" class="cartCountInput" />
+                        <button class="plus">+</button>
+                      </div>
+                      <a
+                        href="#"
+                        class="tovarItem__addCart redBtn_withSpan"
+                        type="submit"
+                        name="ms2_action"
+                        value="cart/add"
+                        ><span>Купить</span>
+                      </a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="tovarItem__outer">
+                <form method="post" class="ms2_form">
+                  <input type="hidden" name="id" value="{$id}" />
+                  <input type="hidden" name="count" value="1" />
+                  <input type="hidden" name="options" value="[]" />
+                  <div class="tovarItem">
+                    <a href="#" class="tovarItem__header">
+                      <div class="tovarItem__img">
+                        <img src="assets/img/cat/02.jpg" alt="1" />
+                      </div>
+                      <div class="tovarItem__title">Название товара 1</div>
+                      <div class="tovarItem__desc">
+                        Короткое описание товара в одну
+                      </div>
+                    </a>
+                    <div class="tovarItem__footer">
+                      <div class="tovarItem__priceOuter">
+                        <div class="tovarItem__oldPrice">
+                          Старая цена: 2500 руб.
+                        </div>
+                        <div class="tovarItem__price">
+                          Цена: 2200 руб.
+                        </div>
+                      </div>
+                      <div class="number">
+                        <button class="minus">-</button>
+                        <input type="text" name="count" value="1" class="cartCountInput" />
+                        <button class="plus">+</button>
+                      </div>
+                      <a
+                        href="#"
+                        class="tovarItem__addCart redBtn_withSpan"
+                        type="submit"
+                        name="ms2_action"
+                        value="cart/add"
+                        ><span>Купить</span>
+                      </a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="tovarItem__outer">
+                <form method="post" class="ms2_form">
+                  <input type="hidden" name="id" value="{$id}" />
+                  <input type="hidden" name="count" value="1" />
+                  <input type="hidden" name="options" value="[]" />
+                  <div class="tovarItem">
+                    <a href="#" class="tovarItem__header">
+                      <div class="tovarItem__img">
+                        <img src="assets/img/cat/01.jpg" alt="1" />
+                      </div>
+                      <div class="tovarItem__title">Название товара 1</div>
+                      <div class="tovarItem__desc">
+                        Короткое описание товара в одну, две или несколько строчек. Самое основное. Ну и еще немного
+                        если надо
+                      </div>
+                    </a>
+                    <div class="tovarItem__footer">
+                      <div class="tovarItem__priceOuter">
+                        <div class="tovarItem__oldPrice">
+                          Старая цена: 2500 руб.
+                        </div>
+                        <div class="tovarItem__price">
+                          Цена: 2200 руб.
+                        </div>
+                      </div>
+                      <div class="number">
+                        <button class="minus">-</button>
+                        <input type="text" name="count" value="1" class="cartCountInput" />
+                        <button class="plus">+</button>
+                      </div>
+                      <a
+                        href="#"
+                        class="tovarItem__addCart redBtn_withSpan"
+                        type="submit"
+                        name="ms2_action"
+                        value="cart/add"
+                        ><span>Купить</span>
+                      </a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="tovarItem__outer">
+                <form method="post" class="ms2_form">
+                  <input type="hidden" name="id" value="{$id}" />
+                  <input type="hidden" name="count" value="1" />
+                  <input type="hidden" name="options" value="[]" />
+                  <div class="tovarItem">
+                    <a href="#" class="tovarItem__header">
+                      <div class="tovarItem__img">
+                        <img src="assets/img/cat/03.jpg" alt="1" />
+                      </div>
+                      <div class="tovarItem__title">Название товара 1</div>
+                      <div class="tovarItem__desc">
+                        Короткое описание товара в одну, две или несколько строчек. Самое основное. Ну и еще немного
+                        если надо
+                      </div>
+                    </a>
+                    <div class="tovarItem__footer">
+                      <div class="tovarItem__priceOuter">
+                        <div class="tovarItem__oldPrice">
+                          Старая цена: 2500 руб.
+                        </div>
+                        <div class="tovarItem__price">
+                          Цена: 2200 руб.
+                        </div>
+                      </div>
+                      <div class="number">
+                        <button class="minus">-</button>
+                        <input type="text" name="count" value="1" class="cartCountInput" />
+                        <button class="plus">+</button>
+                      </div>
+                      <a
+                        href="#"
+                        class="tovarItem__addCart redBtn_withSpan"
+                        type="submit"
+                        name="ms2_action"
+                        value="cart/add"
+                        ><span>Купить</span>
+                      </a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore ab neque, minus iure quis quia saepe
+              eaque quasi deserunt veniam repellendus cupiditate iste quaerat perferendis voluptatibus, sapiente,
+              consequuntur dolor. In!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site__footer">
+      <div class="footer__area">
+        <footer class="footer">
+          <div class="f1">
+            <div class="f1__text">Доставка стройматериалов по звонку</div>
+            <div class="f1__text f1__text_red">© DPZ64.ru - 2020</div>
+
+            <div class="f1__text f1__text_small">*Информация на сайте не является публичной офертой</div>
+
+            <a href="#" class="privacyLink">Политика конфиденциальности и обработки персональных данных</a>
+            <div class="dev">
+              Разработка сайта: <a href="https://site-a.ru" target="_blank"> веб-студия "Сайт-А"</a>
+            </div>
+          </div>
+          <div class="f2">
+            <nav class="footerMenu__area">
+              <ul class="footerMenu">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Каталог товаров</a></li>
+                <li><a href="#">Заказ и доставка</a></li>
+                <li><a href="#">Информация</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="f3">
+            <div class="like__area">
+              <div class="likeBlock">
+                <a class="like_twitter" onclick="return share.twitter(share_url,share_title);" href="#"
+                  ><i class="icon-twitter"></i
+                ></a>
+                <a class="like_vk" onclick="return share.vk(share_url,share_title,share_image,share_desc);" href="#"
+                  ><i class="icon-vk"></i
+                ></a>
+                <a class="like_ok" onclick="return share.ok(share_url,share_desc);" href="#"
+                  ><i class="icon-odnoklassniki"></i
+                ></a>
+                <a class="like_fb" onclick="return share.fb(share_url,share_title,share_image,share_desc);" href="#"
+                  ><i class="icon-facebook"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="f4">
+            <div class="footer__tel">
+              <a href="tel:+79053879990">8(905)387-99-90</a>
+              <a href="tel:+79376397000">8(937)639-70-00</a>
+            </div>
+            <div class="footer__email">
+              <a href="mailto:mail@dpz64.ru">mail@dpz64.ru</a>
+            </div>
+            <div class="footer__address">
+              <span>г. Энгельс, ул. М.Расковой 6в</span>
+            </div>
+            <div class="footer__time">
+              <span>Пн.-Пт.: 9:00 - 20:00</span>
+              <span class="red">Сб.- Вс.: 9:00 - 18:00</span>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <div class="overlay"></div>
+    <div class="js_containerZ1 popupCallBack animated">
+      <div class="formZ__area">
+        <div class="formClose">
+          <i class="icon-close"></i>
+        </div>
+        <div class="formZ_title">Чтобы заказать обратный звонок, укажите, пожалуйста, имя и свой номер телефона.</div>
+        <form class="formZ1" method="post" action="#">
+          <input class="nameZ1" name="nameZ1" type="text" placeholder="Ваше имя" />
+          <input class="phoneZ1" name="phoneZ1" type="text" placeholder="Укажите Ваш номер" />
+          <input class="work_emailZ1" name="work_emailZ1" type="text" placeholder="Рабочий email" />
+          <div class="form__policy">
+            <p>
+              *Отправляя сообщение Вы соглашаетесь с условиями
+              <a href="policy.pdf" target="_blank">политики конфиденциальности</a>
+            </p>
+          </div>
+          <div id="recaptcha2" class="g-recaptcha" data-sitekey="6LeJDNUUAAAAALiw-p3ooE9OXL2OQppyxeBvbCeR"></div>
+          <a class="submitZ1 redBtn_withSpan" type="submit" name="submitZ1"><span>Заказать звонок</span></a>
+        </form>
+      </div>
+    </div>
+
+    <div class="toTop">
+      <i class="icon-up"></i>
+    </div>
+
+    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="node_modules/swiper/js/swiper.min.js"></script>
+    <script src="node_modules/jquery.maskedinput/src/jquery.maskedinput.js"></script>
+    <script src="node_modules/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="node_modules/masonry-layout/dist/masonry.pkgd.min.js"></script>
+    <!-- <script src="node_modules/instafeed.js/instafeed.min.js"></script> -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

@@ -98,6 +98,10 @@
   .dualBox2 {
     width: 60%;
   }
+
+  .tovarItem__outer {
+    width: 33.333%;
+  }
 }
 
 @media only screen and (max-width: 920px) {
@@ -264,6 +268,9 @@
   .swiper__text1 {
     font-size: 1rem;
   }
+  .tovarItem__outer {
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -319,10 +326,19 @@
     display: block;
     float: none;
   }
+  .category {
+    justify-content: center;
+  }
+  .tovarItem__outer {
+    width: 90%;
+  }
 }
 
 @media only screen and (max-width: 320px) {
   .logo1 {
     width: 70%;
+  }
+  .tovarItem__outer {
+    width: 100%;
   }
 }

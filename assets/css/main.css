@@ -1196,3 +1196,138 @@ header.header {
   width: 100%;
   margin-bottom: 5px;
 }
+
+.category__outer {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.category {
+  margin: 0 -5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tovarItem__outer {
+  padding: 5px;
+  width: 25%;
+  display: flex;
+}
+
+.tovarItem {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #a6a6a6;
+  transition: all 0.3s;
+  padding: 10px;
+  height: 100%;
+}
+
+.tovarItem:hover {
+  border: 2px solid #be3f46;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+.tovarItem__header {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.tovarItem__img {
+  margin-bottom: 15px;
+}
+.tovarItem__img img {
+  display: block;
+  width: 100%;
+}
+
+.tovarItem__title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #000;
+  line-height: 1.1;
+}
+
+.tovarItem__desc {
+  font-size: 0.75rem;
+  color: #000;
+  line-height: 1;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.tovarItem__footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+
+.tovarItem__priceOuter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tovarItem__oldPrice {
+  text-decoration: line-through;
+  font-size: 0.875rem;
+  font-style: italic;
+  color: #a6a6a6;
+  margin-bottom: 10px;
+}
+
+.tovarItem__price {
+  color: #000;
+  font-weight: 600;
+  font-size: 1.125rem;
+  margin-bottom: 15px;
+}
+
+.tovarItem__addCart {
+  text-decoration: none;
+  padding: 10px;
+}
+
+.number {
+  display: flex;
+  width: 150px;
+  margin: 0 auto 10px;
+}
+
+.number i {
+  font-size: 0.875rem;
+}
+
+.number button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  border: 2px solid #a6a6a6;
+  cursor: pointer;
+  outline: none;
+  color: #be3f46;
+  font-size: 1.125rem;
+  font-weight: 400;
+  background: transparent;
+}
+
+.number input {
+  height: 28px;
+  display: flex;
+  text-align: center;
+  border: none;
+  outline: none;
+  border-top: 2px solid #a6a6a6;
+  border-bottom: 2px solid #a6a6a6;
+  color: #be3f46;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 30px;
+  width: 80px;
+  background: transparent;
+}
