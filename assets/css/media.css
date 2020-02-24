@@ -113,6 +113,9 @@
   .siteMap {
     padding: 10px;
   }
+  .siteMap_inContactsPage {
+    padding: 0;
+  }
   .swiper-slide1 {
     height: 300px;
   }
@@ -122,6 +125,9 @@
 }
 
 @media only screen and (max-width: 800px) {
+  .gallery__item {
+    width: 33.333%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -160,6 +166,9 @@
   }
   .siteMap {
     padding: 5px;
+  }
+  .siteMap_inContactsPage {
+    padding: 0;
   }
   .infoContacts {
     width: 100%;
@@ -283,11 +292,32 @@
     margin-bottom: 20px;
     align-items: center;
   }
+  .popupCallBack {
+    display: none;
+    z-index: 8888;
+    position: fixed;
+    top: 2px;
+    width: 96%;
+    left: 2%;
+    margin-left: 0;
+  }
+  .gallery__item {
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width: 400px) {
   .logo1 {
     width: 50%;
+  }
+  .videoBox__outer {
+    width: 100%;
+  }
+
+  .content img {
+    width: 100%;
+    display: block;
+    float: none;
   }
 }
 

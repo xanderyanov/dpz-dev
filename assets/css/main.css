@@ -810,6 +810,18 @@ header.header {
   justify-content: space-between;
 }
 
+.siteMap_inContactsPage {
+  padding: 0;
+}
+
+.siteMap_inContactsPage .infoContacts {
+  width: 100%;
+}
+
+.siteMap_inContactsPage .infoMap {
+  width: 100%;
+}
+
 .infoContacts {
   width: 22%;
 }
@@ -1076,4 +1088,111 @@ header.header {
 
 .footer__time span.red {
   color: #be3f46;
+}
+
+.innerBox {
+  width: 100%;
+  padding: 10px 0 10px;
+  border-top: 2px solid #be3f46;
+  margin-top: 20px;
+}
+
+.gallery {
+  margin: 0 -5px;
+  display: flex;
+  /*justify-content: space-around;*/
+  flex-wrap: wrap;
+}
+
+.gallery__item {
+  width: 16.666%;
+  padding: 5px;
+}
+
+.gallery__item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery__item a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(190, 63, 70, 0.6);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url(../img/zoom.png);
+  opacity: 0;
+  transition: all 0.9s;
+}
+
+.gallery__item a:hover:after {
+  opacity: 1;
+}
+
+.gallery__item a img {
+  display: block;
+  width: 100%;
+  transition: all 0.9s;
+}
+
+.gallery__item a:hover img {
+  -webkit-transform: rotateZ(5deg) scale(1.1);
+  -ms-transform: rotateZ(5deg) scale(1.1);
+  transform: rotateZ(5deg) scale(1.1);
+}
+
+.videoBox__area {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -5px;
+  justify-content: center;
+}
+
+.videoBox__outer {
+  padding: 5px;
+  width: 50%;
+}
+
+.videoBox {
+  position: relative;
+}
+
+/* .videoBox:hover {
+
+} */
+
+.videoBox a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(190, 63, 70, 0.6);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url(../img/play.png);
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.videoBox a:hover:after {
+  opacity: 1;
+}
+
+.videoBox a {
+  display: block;
+}
+
+.videoBox a img {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
 }

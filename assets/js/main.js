@@ -38,6 +38,9 @@ $(function() {
     return false;
   });
 
+  $(".phoneZ1").mask("+7 (999) 999-9999");
+  $(".phone1").mask("+7 (999) 999-9999");
+
   if ($(".swiper-container1").length) {
     var mySwiper1 = new Swiper(".swiper-container1", {
       slidesPerView: 1,
@@ -89,6 +92,228 @@ $(function() {
       }
     });
   }
+
+  $("a[data-fancybox]").fancybox({
+    closeBtn: false,
+    arrows: true,
+    keyboard: true,
+    nextClick: true,
+    infobar: true,
+    protect: true,
+    nextEffect: "elastic",
+    prevEffect: "elastic",
+    padding: 0,
+    loop: true,
+    animationEffect: "zoom-in-out",
+    transitionEffect: "slide",
+    touch: {
+      vertical: true, // Allow to drag content vertically
+      momentum: true // Continue movement after releasing mouse/touch when panning
+    }
+  });
+
+  $(".form1").on("click", ".submit1", function(e) {
+    e.preventDefault();
+    var name = $(".name1").val();
+    var phone = $(".phone1").val();
+    var email = $(".email1").val();
+    var workemail = $(".work_email1").val();
+    var message = $(".message1").val();
+    var r = /^[\w\.\d-_]+@[\w\.\d-_]+\.\w{2,4}$/i;
+    var recaptcha = grecaptcha.getResponse("recaptcha1");
+    if (name == "") {
+      swal({
+        title: "Поле Имя пустое",
+        text: "Заполните поле имя",
+        type: "error",
+        confirmButtonText: "ок"
+      });
+      $(".name1").addClass("error");
+      setTimeout(function() {
+        $(".name1").removeClass("error");
+      }, 3000);
+    } else if (phone == "") {
+      swal({
+        title: "Поле Телефон пустое",
+        text: "Заполните поле телефон",
+        type: "error",
+        confirmButtonText: "ок"
+      });
+      $(".phone1").addClass("error");
+      setTimeout(function() {
+        $(".phone1").removeClass("error");
+      }, 3000);
+    } else if (email == "") {
+      swal({
+        title: "Ошибка Email",
+        text: "Заполните поле Email",
+        type: "error",
+        confirmButtonText: "ок"
+      });
+      $(".email1").addClass("error");
+      setTimeout(function() {
+        $(".email1").removeClass("error");
+      }, 3000);
+    } else if (!r.test(email)) {
+      swal({
+        title: "Ошибка",
+        text: "Корректно заполните поле e-mail",
+        type: "error",
+        confirmButtonText: "ок"
+      });
+      $(".email1").addClass("error");
+      setTimeout(function() {
+        $(".email1").removeClass("error");
+      }, 3000);
+    } else if (message == "") {
+      swal({
+        title: "Пустое сообщение",
+        text: "Заполните текст сообщения",
+        type: "error",
+        confirmButtonText: "ок"
+      });
+      $(".message1").addClass("error");
+      setTimeout(function() {
+        $(".message1").removeClass("error");
+      }, 3000);
+    } else if (workemail != "") {
+      swal({
+        title: "Ах ты жулик",
+        text: "Уберите робота от компьютера",
+        type: "error",
+        confirmButtonText: "ок"
+      });
+    } else if (!recaptcha) {
+      swal({
+        title: "поставьте галочку",
+        text: "при проверке на спам",
+        type: "error",
+        confirmButtonText: "ок"
+      });
+    } else {
+      $.post(
+        "mail.php",
+        {
+          name: name,
+          phone: phone,
+          email: email,
+          message: message,
+          recaptcha: recaptcha
+        },
+        function() {
+          swal({
+            title: "Спасибо",
+            text: "Ваше сообщение отправлено",
+            type: "success",
+            confirmButtonText: "ок"
+          });
+          $(".name1")
+            .val("")
+            .removeClass("error");
+          $(".phone1")
+            .val("")
+            .removeClass("error");
+          $(".email1")
+            .val("")
+            .removeClass("error");
+          $(".message1")
+            .val("")
+            .removeClass("error");
+        }
+      );
+    }
+  });
+
+  $(".ringBtn_js").click(function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    var self = $(this);
+    if (self.hasClass("js_active")) {
+      self.removeClass("js_active");
+      $(".js_containerZ1")
+        .addClass("bounceOutUp")
+        .removeClass("bounceInDown")
+        .fadeOut(600);
+      $(".overlay").fadeOut(200);
+    } else {
+      self.addClass("js_active");
+      $(".js_containerZ1")
+        .removeClass("bounceOutUp")
+        .addClass("bounceInDown")
+        .fadeIn(200);
+      $(".overlay").fadeIn(200);
+    }
+  });
+  $(".overlay").click(function(e) {
+    e.preventDefault();
+    $(".js_containerZ1")
+      .addClass("bounceOutUp")
+      .removeClass("bounceInDown")
+      .fadeOut(600);
+    $(".ringBtn_js").removeClass("js_active");
+
+    $(".overlay").fadeOut(600);
+  });
+  $(".formClose").click(function(e) {
+    e.preventDefault();
+    $(".js_containerZ1")
+      .addClass("bounceOutUp")
+      .removeClass("bounceInDown")
+      .fadeOut(600);
+    $(".ringBtn_js").removeClass("js_active");
+    $(".overlay").fadeOut(600);
+  });
+  $(".formZ1").on("click", ".submitZ1", function(e) {
+    e.preventDefault();
+    var name = $(".nameZ1").val();
+    var phone = $(".phoneZ1").val();
+    var workemail = $(".work_emailZ1").val();
+    var r = /^[\w\.\d-_]+@[\w\.\d-_]+\.\w{2,4}$/i;
+    if (name == "") {
+      swal({ title: "Поле Имя пустое", text: "Заполните поле имя", type: "error", confirmButtonText: "ок" });
+      $(".nameZ1").addClass("error");
+      setTimeout(function() {
+        $(".nameZ1").removeClass("error");
+      }, 3000);
+    } else if (phone == "") {
+      swal({
+        title: "Поле Телефон пустое",
+        text: "Заполните поле телефон",
+        type: "error",
+        confirmButtonText: "ок"
+      });
+      $(".phoneZ1").addClass("error");
+      setTimeout(function() {
+        $(".phoneZ1").removeClass("error");
+      }, 3000);
+    } else if (workemail != "") {
+      swal({ title: "Ах ты жулик", text: "Уберите робота от компьютера", type: "error", confirmButtonText: "ок" });
+    } else {
+      $.post(
+        "mail.php",
+        {
+          subj: "Заказ с главной страницы",
+          name: name,
+          phone: phone
+        },
+        function() {
+          swal({ title: "Спасибо", text: "Ваше сообщение отправлено", type: "success", confirmButtonText: "ок" });
+          $(".nameZ1")
+            .val("")
+            .removeClass("error");
+          $(".phoneZ1")
+            .val("")
+            .removeClass("error");
+          $(".jsbtn__Z1").removeClass("js_active");
+          $(".js_containerZ1")
+            .addClass("bounceOutUp")
+            .removeClass("bounceInDown")
+            .fadeOut(600);
+          $(".overlay").fadeOut(200);
+        }
+      );
+    }
+  });
 });
 
 var isMobile = {
