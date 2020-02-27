@@ -271,6 +271,36 @@
   .tovarItem__outer {
     width: 50%;
   }
+
+  .tovar__areaTop {
+    flex-direction: column;
+  }
+  .tovar__info {
+    width: 100%;
+    order: 1;
+  }
+  .tovar__slider {
+    width: 80%;
+    padding: 20px 0 0 0;
+    order: 2;
+  }
+
+  .tovar__info form {
+    align-items: center;
+  }
+  .tovar__infoTitle {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .tovar__infoDev {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .tovar__priceArea {
+    width: 100%;
+    align-items: center;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -310,6 +340,9 @@
   }
   .gallery__item {
     width: 50%;
+  }
+  .tovar__slider {
+    width: 100%;
   }
 }
 

@@ -141,6 +141,96 @@ $(function() {
     // }
   }
 
+  $(".tovarItem__addCart").on("click", function(e) {
+    e.preventDefault(); //при верстке ставить - в modx убирать, а то корзина не суммируется
+    var cart = $(".myMiniCart__area ");
+    var imgtodrag = $(this)
+      .closest(".tovarItem")
+      .children(".tovarItem__header")
+      .children(".tovarItem__img")
+      .find("img");
+
+    if (imgtodrag) {
+      var imgclone = imgtodrag
+        .clone()
+        .offset({
+          top: imgtodrag.offset().top,
+          left: imgtodrag.offset().left
+        })
+        .css({
+          opacity: "0.5",
+          position: "absolute",
+          height: "150px",
+          width: "150px",
+          "z-index": "9999"
+        })
+        .appendTo($("body"))
+        .animate(
+          {
+            top: cart.offset().top + 10,
+            left: cart.offset().left + 10,
+            width: 75,
+            height: 75
+          },
+          1000
+        );
+
+      imgclone.animate(
+        {
+          width: 0,
+          height: 0
+        },
+        function() {
+          $(this).detach();
+        }
+      );
+    }
+  });
+
+  $(".tovar__addToCart").on("click", function(e) {
+    e.preventDefault(); //при верстке ставить - в modx убирать, а то корзина не суммируется
+    var cart = $(".myMiniCart__area ");
+    var imgtodrag = $(this)
+      .closest(".tovar__areaTop")
+      .find(".swiper-slide-active img");
+
+    if (imgtodrag) {
+      var imgclone = imgtodrag
+        .clone()
+        .offset({
+          top: imgtodrag.offset().top,
+          left: imgtodrag.offset().left
+        })
+        .css({
+          opacity: "0.5",
+          position: "absolute",
+          height: "150px",
+          width: "150px",
+          "z-index": "9999"
+        })
+        .appendTo($("body"))
+        .animate(
+          {
+            top: cart.offset().top + 10,
+            left: cart.offset().left + 10,
+            width: 75,
+            height: 75
+          },
+          1000
+        );
+
+      imgclone.animate(
+        {
+          width: 0,
+          height: 0
+        },
+        function() {
+          $(this).detach();
+        }
+      );
+    }
+  });
+
   $("a[data-fancybox]").fancybox({
     closeBtn: false,
     arrows: true,

@@ -318,34 +318,34 @@
                 <div class="swiper-container swiper-container2 gallery-top">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide swiper-slide2">
-                      <a href="assets/img/tovar/01big.jpg" data-fancybox="group" data-caption="{$file['name']}">
-                        <img src="assets/img/tovar/01big.jpg" alt="">
+                      <a href="assets/img/tovar/01.jpg" data-fancybox="group1" data-caption="{$file['name']}">
+                        <img src="assets/img/tovar/01.jpg" alt="">
                       </a>
                     </div>
                     <div class="swiper-slide swiper-slide2">
-                      <a href="assets/img/tovar/01big.jpg" data-fancybox="group" data-caption="{$file['name']}">
-                        <img src="assets/img/tovar/01big.jpg" alt="">
+                      <a href="assets/img/tovar/01.jpg" data-fancybox="group1" data-caption="{$file['name']}">
+                        <img src="assets/img/tovar/01.jpg" alt="">
                       </a>
                     </div>
                     <div class="swiper-slide swiper-slide2">
-                      <a href="assets/img/tovar/01big.jpg" data-fancybox="group" data-caption="{$file['name']}">
-                        <img src="assets/img/tovar/01big.jpg" alt="">
+                      <a href="assets/img/tovar/01.jpg" data-fancybox="group1" data-caption="{$file['name']}">
+                        <img src="assets/img/tovar/01.jpg" alt="">
                       </a>
                     </div>
                     <div class="swiper-slide swiper-slide2">
-                      <a href="assets/img/tovar/01big.jpg" data-fancybox="group" data-caption="{$file['name']}">
-                        <img src="assets/img/tovar/01big.jpg" alt="">
+                      <a href="assets/img/tovar/01.jpg" data-fancybox="group1" data-caption="{$file['name']}">
+                        <img src="assets/img/tovar/01.jpg" alt="">
                       </a>
                     </div>
                     <div class="swiper-slide swiper-slide2">
-                      <a href="assets/img/tovar/01big.jpg" data-fancybox="group" data-caption="{$file['name']}">
-                        <img src="assets/img/tovar/01big.jpg" alt="">
+                      <a href="assets/img/tovar/01.jpg" data-fancybox="group1" data-caption="{$file['name']}">
+                        <img src="assets/img/tovar/01.jpg" alt="">
                       </a>
                     </div>
                   </div>
                   <div class="swiper-button-next swiper-button-next2"><i class="icon-next2"></i>
                   </div>
-                  <div class="swiper-button-prev swiper-button-prev2"><i class="icon-back2"></i>
+                  <div class="swiper-button-prev swiper-button-prev2"><i class="icon-prev2"></i>
                   </div>
                 </div>
                 <div class="swiper-container gallery-thumbs">
@@ -378,21 +378,15 @@
 
 
                   <div class="tovar__infoTitle">
-                    <h1>Масло черного тмина</h1>
+                    <h1>Название товара</h1>
                   </div>
                   <div class="tovar__infoDev">
-                    Несколько вводных предложения про товар. Основные характеристики и что-то типа этого, в чем
-                    фасуется, как изготавливается, сколько хранится и т.п. Несколько вводных предложения про товар.
-                    Основные характеристики и что-то типа этого, в чем фасуется, как изготавливается, сколько хранится
-                    и т.п. Несколько вводных предложения про товар. Основные характеристики и что-то типа этого, в чем
-                    фасуется, как изготавливается, сколько хранится и т.п.
+                    Короткое описание товара в одну, две или несколько строчек. Самое основное. Ну и еще немного если надо
                   </div>
 
                   <div class="tovar__priceArea">
-                    <div class="tovar__oldPrice">Старая цена:
-                      <span>1800</span>руб/литр
-                    </div>
-                    <div class="tovar__price">Цена: <span>1500</span>руб/литр</div>
+                    <div class="tovar__oldPrice">Старая цена: 1800 руб</div>
+                    <div class="tovar__price">Цена: 1500 руб</div>
                   </div>
 
                   <div class="addToCartOuter">
@@ -401,8 +395,8 @@
                       <input type="text" name="count" value="1" class="cartCountInput">
                       <button class="plus">+</button>
                     </div>
-                    <button class="tovar__addToCart" type="submit" name="ms2_action"
-                      value="cart/add"><span>Купить</span></button>
+                    <a href="#" class="tovar__addToCart redBtn_withSpan" type="submit" name="ms2_action" value="cart/add"><span>Купить</span>
+                      </a>
                   </div>
 
 
@@ -553,6 +547,180 @@
                     </a>
                   </div>
                 </div>
+              </div>
+            </div>
+
+            <div class="innerBox">
+              <div class="title"><h2>Похожие товары</h2></div>
+              <div class="category">
+                <div class="tovarItem__outer">
+                  <form method="post" class="ms2_form">
+                    <input type="hidden" name="id" value="{$id}" />
+                    <input type="hidden" name="count" value="1" />
+                    <input type="hidden" name="options" value="[]" />
+                    <div class="tovarItem">
+                      <a href="#" class="tovarItem__header">
+                        <div class="tovarItem__img">
+                          <img src="assets/img/cat/01.jpg" alt="1" />
+                        </div>
+                        <div class="tovarItem__title">Название товара 1</div>
+                        <div class="tovarItem__desc">
+                          Короткое описание товара в одну, две или несколько строчек. Самое основное. Ну и еще немного
+                          если надо
+                        </div>
+                      </a>
+                      <div class="tovarItem__footer">
+                        <div class="tovarItem__priceOuter">
+                          <div class="tovarItem__oldPrice">
+                            Старая цена: 2500 руб.
+                          </div>
+                          <div class="tovarItem__price">
+                            Цена: 2200 руб.
+                          </div>
+                        </div>
+                        <div class="number">
+                          <button class="minus">-</button>
+                          <input type="text" name="count" value="1" class="cartCountInput" />
+                          <button class="plus">+</button>
+                        </div>
+                        <a
+                          href="#"
+                          class="tovarItem__addCart redBtn_withSpan"
+                          type="submit"
+                          name="ms2_action"
+                          value="cart/add"
+                          ><span>Купить</span>
+                        </a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="tovarItem__outer">
+                  <form method="post" class="ms2_form">
+                    <input type="hidden" name="id" value="{$id}" />
+                    <input type="hidden" name="count" value="1" />
+                    <input type="hidden" name="options" value="[]" />
+                    <div class="tovarItem">
+                      <a href="#" class="tovarItem__header">
+                        <div class="tovarItem__img">
+                          <img src="assets/img/cat/02.jpg" alt="1" />
+                        </div>
+                        <div class="tovarItem__title">Название товара 1</div>
+                        <div class="tovarItem__desc">
+                          Короткое описание товара в одну
+                        </div>
+                      </a>
+                      <div class="tovarItem__footer">
+                        <div class="tovarItem__priceOuter">
+                          <div class="tovarItem__oldPrice">
+                            Старая цена: 2500 руб.
+                          </div>
+                          <div class="tovarItem__price">
+                            Цена: 2200 руб.
+                          </div>
+                        </div>
+                        <div class="number">
+                          <button class="minus">-</button>
+                          <input type="text" name="count" value="1" class="cartCountInput" />
+                          <button class="plus">+</button>
+                        </div>
+                        <a
+                          href="#"
+                          class="tovarItem__addCart redBtn_withSpan"
+                          type="submit"
+                          name="ms2_action"
+                          value="cart/add"
+                          ><span>Купить</span>
+                        </a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="tovarItem__outer">
+                  <form method="post" class="ms2_form">
+                    <input type="hidden" name="id" value="{$id}" />
+                    <input type="hidden" name="count" value="1" />
+                    <input type="hidden" name="options" value="[]" />
+                    <div class="tovarItem">
+                      <a href="#" class="tovarItem__header">
+                        <div class="tovarItem__img">
+                          <img src="assets/img/cat/01.jpg" alt="1" />
+                        </div>
+                        <div class="tovarItem__title">Название товара 1</div>
+                        <div class="tovarItem__desc">
+                          Короткое описание товара в одну, две или несколько строчек. Самое основное. Ну и еще немного
+                          если надо
+                        </div>
+                      </a>
+                      <div class="tovarItem__footer">
+                        <div class="tovarItem__priceOuter">
+                          <div class="tovarItem__oldPrice">
+                            Старая цена: 2500 руб.
+                          </div>
+                          <div class="tovarItem__price">
+                            Цена: 2200 руб.
+                          </div>
+                        </div>
+                        <div class="number">
+                          <button class="minus">-</button>
+                          <input type="text" name="count" value="1" class="cartCountInput" />
+                          <button class="plus">+</button>
+                        </div>
+                        <a
+                          href="#"
+                          class="tovarItem__addCart redBtn_withSpan"
+                          type="submit"
+                          name="ms2_action"
+                          value="cart/add"
+                          ><span>Купить</span>
+                        </a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="tovarItem__outer">
+                  <form method="post" class="ms2_form">
+                    <input type="hidden" name="id" value="{$id}" />
+                    <input type="hidden" name="count" value="1" />
+                    <input type="hidden" name="options" value="[]" />
+                    <div class="tovarItem">
+                      <a href="#" class="tovarItem__header">
+                        <div class="tovarItem__img">
+                          <img src="assets/img/cat/03.jpg" alt="1" />
+                        </div>
+                        <div class="tovarItem__title">Название товара 1</div>
+                        <div class="tovarItem__desc">
+                          Короткое описание товара в одну, две или несколько строчек. Самое основное. Ну и еще немного
+                          если надо
+                        </div>
+                      </a>
+                      <div class="tovarItem__footer">
+                        <div class="tovarItem__priceOuter">
+                          <div class="tovarItem__oldPrice">
+                            Старая цена: 2500 руб.
+                          </div>
+                          <div class="tovarItem__price">
+                            Цена: 2200 руб.
+                          </div>
+                        </div>
+                        <div class="number">
+                          <button class="minus">-</button>
+                          <input type="text" name="count" value="1" class="cartCountInput" />
+                          <button class="plus">+</button>
+                        </div>
+                        <a
+                          href="#"
+                          class="tovarItem__addCart redBtn_withSpan"
+                          type="submit"
+                          name="ms2_action"
+                          value="cart/add"
+                          ><span>Купить</span>
+                        </a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
               </div>
             </div>
 

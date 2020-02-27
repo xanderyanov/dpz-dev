@@ -174,7 +174,7 @@ a.swiper__inner1:hover {
 .gallery-top {
   /*height: 80%;*/
   /*width: 100%;*/
-  border: 1px solid #d77b04;
+  border: 1px solid #a6a6a6;
 }
 .gallery-thumbs {
   box-sizing: border-box;
@@ -184,8 +184,8 @@ a.swiper__inner1:hover {
   width: 25%;
   height: 100%;
   opacity: 0.4;
-  padding: 10px;
-  border: 1px solid #d77b04;
+  padding: 5px;
+  border: 1px solid #a6a6a6;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -205,7 +205,7 @@ a.swiper__inner1:hover {
 
 .swiper-button-prev2,
 .swiper-button-next2 {
-  background-color: #fff;
+  background-color: #a6a6a6;
   background-image: none !important;
   width: 20px;
   height: 40px;
@@ -219,14 +219,14 @@ a.swiper__inner1:hover {
 
 .swiper-button-prev2 i,
 .swiper-button-next2 i {
-  color: #d77b04;
+  color: #fff;
   font-size: 1rem;
   transition: all 0.3s;
 }
 
 .swiper-button-prev2:hover,
 .swiper-button-next2:hover {
-  background: #d77b04;
+  background: #be3f46;
   background-image: none;
 }
 
